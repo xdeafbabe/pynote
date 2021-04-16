@@ -1,27 +1,40 @@
 # Pynote
 
-Note taking app. Build it with poetry and install locally.
+Note taking app.
 Requires `NeoVim` and `bat` as those are my file editor and viewer of choice.
 Might later make editing and viewing configurable with custom commands and args and stuff.
+
+Didn't see any point in not using `NeoVim` or `bat` since they are awesome
+and have syntax highlighting and line numbers and less/cat behaviour and stuff.
+Much better than `print(file.read())` I have to say!
+
+## Installation
+
+```
+make deps
+make build
+pip install dist/artifact.whl
+```
 
 ## Usage
 
 Notes will be saved to `~/.notes` directory. Available commands:
 
-```shell
+```
 note edit sample-note
-     # Create or edit an existing note.
+     # Create or edit a note with provided TITLE.
      # Launches `NeoVim` and sets syntax to Markdown.
 
 note list
      # Lists available notes.
 
 note view sample-note
-     # View an existing note.
+     # View a note with provided TITLE.
      # Launches `bat` and sets syntax to Markdown.
 
 note delete sample-note
-     # Deletes an existing note.
+     # Deletes a note with provided TITLE.
+     # Asks for confirmation as long as you don't pass `--force`!
 ```
 
 ## TODO
@@ -39,7 +52,7 @@ note delete sample-note
 
 - [x] A sane Makefile _(without poetry bullshit)_
 - [ ] Tests
-- [ ] A sane README
+- [x] A sane README _(what's wrong with current iteration? mark as done.)_
 - [ ] CI/CD
 - [ ] Upload to PyPI
 
