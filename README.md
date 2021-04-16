@@ -9,15 +9,19 @@ Might later make editing and viewing configurable with custom commands and args 
 Notes will be saved to `~/.notes` directory. Available commands:
 
 ```shell
-note edit    # Create or edit an existing note.
-             # Launches `NeoVim` and sets syntax to Markdown.
+note edit sample-note
+     # Create or edit an existing note.
+     # Launches `NeoVim` and sets syntax to Markdown.
 
-note list    # Lists available notes.
+note list
+     # Lists available notes.
 
-note view    # View an existing note.
-             # Launches `bat` and sets syntax to Markdown.
+note view sample-note
+     # View an existing note.
+     # Launches `bat` and sets syntax to Markdown.
 
-note delete  # Deletes an existing note.
+note delete sample-note
+     # Deletes an existing note.
 ```
 
 ## TODO
