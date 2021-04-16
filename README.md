@@ -37,7 +37,7 @@ note delete sample-note
   - [ ] Creation date
   - [ ] SQLite or JSON????
 
-- [ ] A sane Makefile
+- [ ] A sane Makefile _(without poetry bullshit)_
 - [ ] Tests
 - [ ] A sane README
 - [ ] CI/CD
