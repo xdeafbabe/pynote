@@ -56,7 +56,7 @@ note delete sample-note
 - [x] Tests
 - [x] A sane README _(what's wrong with current iteration? mark as done.)_
 - [x] CI/CD
-- [ ] Upload to PyPI
+- [x] Upload to PyPI
 
 - [ ] Super Fancy Stuff Probably Never To Be Implemented
   - [ ] Version control with Git or whatever or just plain diff patch

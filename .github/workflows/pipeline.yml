@@ -28,11 +28,11 @@ jobs:
         make coverage
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@master
-    # - name: Upload package to PyPI
-    #   env:
-    #       TWINE_USERNAME: ${{ secrets.TWINE_USERNAME }}
-    #       TWINE_PASSWORD: ${{ secrets.TWINE_PASSWORD }}
-    #   run: |
-    #     make build
-    #     python -m pip install twine
-    #     twine upload dist/*
+    - name: Upload package to PyPI
+      env:
+          TWINE_USERNAME: ${{ secrets.TWINE_USERNAME }}
+          TWINE_PASSWORD: ${{ secrets.TWINE_PASSWORD }}
+      run: |
+        make build
+        python -m pip install twine
+        twine upload dist/*
