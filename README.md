@@ -13,9 +13,15 @@ Much better than `print(file.read())` I have to say!
 ## Installation
 
 ```
+pip install pynote
+```
+
+## Development
+
+```
 make deps
-make build
-pip install dist/artifact.whl
+make lint
+make testreport
 ```
 
 ## Usage
