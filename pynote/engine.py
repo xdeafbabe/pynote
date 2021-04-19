@@ -2,8 +2,11 @@ import os
 import pathlib
 import subprocess
 
+from . import config
 
-NOTE_PATH = pathlib.Path.home() / '.notes'
+
+if isinstance(NOTE_PATH := config.note_path, str):  # pragma: no cover
+    NOTE_PATH = pathlib.Path(NOTE_PATH)
 
 
 class NotePathIsFile(Exception):

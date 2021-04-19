@@ -1,7 +1,7 @@
 import setuptools
 
 
-VERSION = '0.0.3'
+VERSION = '0.1.1'
 
 
 setuptools.setup(
@@ -24,6 +24,7 @@ setuptools.setup(
     },
     python_requires='>=3.9,<4',
     install_requires=[
+        'confboy==0.2.0',
         'typer[all]==0.3.2',
     ],
     extras_require={
@@ -31,7 +32,7 @@ setuptools.setup(
             'flake8-commas==2.0.0',
             'flake8-import-order==0.18.1',
             'flake8-quotes==3.2.0',
-            'flake8==3.9.0',
+            'flake8==3.9.1',
             'pep8-naming==0.11.1',
         ],
         'test': [
