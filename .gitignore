@@ -6,4 +6,5 @@ htmlcov/
 *.egg
 *.eggs
 !.gitignore
+!.github
 dist

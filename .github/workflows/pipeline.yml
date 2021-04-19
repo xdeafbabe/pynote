@@ -1,0 +1,38 @@
+name: Lint, test and upload coverage
+
+on: [push]
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+
+    steps:
+    - uses: actions/checkout@master
+    - name: Set up Python 3.9
+      uses: actions/setup-python@master
+      with:
+        python-version: 3.9
+    - name: Install dependencies
+      run: |
+        make deps
+    - name: Lint
+      run: |
+        make lint
+    - name: Test
+      run: |
+        make test
+    - name: Generate coverage report
+      run: |
+        make coverage
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@master
+    # - name: Upload package to PyPI
+    #   env:
+    #       TWINE_USERNAME: ${{ secrets.TWINE_USERNAME }}
+    #       TWINE_PASSWORD: ${{ secrets.TWINE_PASSWORD }}
+    #   run: |
+    #     make build
+    #     python -m pip install twine
+    #     twine upload dist/*
