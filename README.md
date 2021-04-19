@@ -1,5 +1,7 @@
 # Pynote
 
+[![codecov](https://codecov.io/gh/Euromance/pynote/branch/master/graph/badge.svg?token=aRfAPtBzsP)](https://codecov.io/gh/Euromance/pynote)
+
 Note taking app.
 Requires `NeoVim` and `bat` as those are my file editor and viewer of choice.
 Might later make editing and viewing configurable with custom commands and args and stuff.
@@ -53,7 +55,7 @@ note delete sample-note
 - [x] A sane Makefile _(without poetry bullshit)_
 - [x] Tests
 - [x] A sane README _(what's wrong with current iteration? mark as done.)_
-- [ ] CI/CD
+- [x] CI/CD
 - [ ] Upload to PyPI
 
 - [ ] Super Fancy Stuff Probably Never To Be Implemented
