@@ -51,7 +51,7 @@ note delete sample-note
   - [ ] SQLite or JSON????
 
 - [x] A sane Makefile _(without poetry bullshit)_
-- [ ] Tests
+- [x] Tests
 - [x] A sane README _(what's wrong with current iteration? mark as done.)_
 - [ ] CI/CD
 - [ ] Upload to PyPI
