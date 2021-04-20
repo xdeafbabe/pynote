@@ -64,11 +64,6 @@ make testreport
   - [x] Viewer args
   - [x] TOML config
 
-- [ ] Meta _(why tho)_
-  - [ ] Categories
-  - [ ] Creation date
-  - [ ] SQLite or JSON????
-
 - [x] A sane Makefile _(without poetry bullshit)_
 - [x] Tests
 - [x] A sane README _(what's wrong with current iteration? mark as done.)_
@@ -79,4 +74,8 @@ make testreport
   - [ ] Version control with Git or whatever or just plain diff patch
     - [ ] SQLite database to keep meta
     - [ ] Probably an actual Git repo lol what???
+  - [ ] Meta _(not really fancy just what for???)_
+    - [ ] Categories
+    - [ ] Creation date
+    - [ ] SQLite or JSON????
   - [ ] Synchronization
