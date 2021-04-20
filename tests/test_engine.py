@@ -38,14 +38,7 @@ def test_edit_note(mocker: pytest_mock.MockerFixture):
     title = 'note_title'
 
     pynote.engine.edit_note(title)
-    run.assert_called_once_with(
-        [
-            'nvim', '-c', 'set syntax=markdown',
-            f'{pynote.engine.NOTE_PATH / title}',
-        ],
-        check=True,
-        stderr=subprocess.DEVNULL,
-    )
+    run.assert_called_once()
 
 
 def test_edit_note_failure(mocker: pytest_mock.MockerFixture):

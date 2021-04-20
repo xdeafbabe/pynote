@@ -1,1 +1,2 @@
 note_path = "/home/euromancer/My Documents/Notes"
+edit_args = ['nvim', '-c', '"set syntax=markdown"', '{PATH}']

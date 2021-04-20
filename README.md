@@ -3,12 +3,13 @@
 [![codecov](https://codecov.io/gh/Euromance/pynote/branch/master/graph/badge.svg?token=aRfAPtBzsP)](https://codecov.io/gh/Euromance/pynote)
 
 Note taking app.
-Requires `NeoVim` and `bat` as those are my file editor and viewer of choice.
-Might later make editing and viewing configurable with custom commands and args and stuff.
+Requires `bat` as it's my file viewer of choice.
+Might later make viewing configurable with custom commands and args and stuff.
+Utilizes `NeoVim` by default to edit notes, although might be configured.
 
 Didn't see any point in not using `NeoVim` or `bat` since they are awesome
 and have syntax highlighting and line numbers and less/cat behaviour and stuff.
-Much better than `print(file.read())` I have to say!
+Much better than `print(file.read())` and `input()`, that's for sure!
 
 ## Installation
 

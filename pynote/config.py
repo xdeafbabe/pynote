@@ -13,6 +13,7 @@ def get_note_path():
 config = confboy.Config(
     {
         'note_path': 'callable:get_note_path',
+        'edit_args': ['nvim', '-c', '"set syntax=markdown"', '{PATH}'],
     },
     callables={
         'get_note_path': {
