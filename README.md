@@ -70,7 +70,7 @@ make testreport
 - [x] CI/CD
 - [x] Upload to PyPI
 
-- [ ] Super Fancy Stuff Probably Never To Be Implemented
+- [ ] Super Fancy Stuff _Probably_ **Never** To Be Implemented
   - [ ] Version control with Git or whatever or just plain diff patch
     - [ ] SQLite database to keep meta
     - [ ] Probably an actual Git repo lol what???
@@ -79,3 +79,14 @@ make testreport
     - [ ] Creation date
     - [ ] SQLite or JSON????
   - [ ] Synchronization
+
+## Questions nobody asked
+
+**Why there won't be version control?**  
+Cause it's a note taking app. Write note, view one or delete it. KISS.
+
+**Why there won't be meta?**  
+Cause why? `$ stat ~/.notes/my-note` to see access and modify and change and birth dates. Although categories might seem helpful at a glance, they're not _that_ helpful!. Even if you have like 200 notes. Just name your notes something like `category-note` and autocompletion will help you.
+
+**Why there won't be synchronization?**  
+Why turn it into yet another SaaS? Initialize a private GitHub repo and here you go: version control, synchronization across devices, and all other fancy stuff. Just automate it with a couple of shell scripts, edit the source code to add some on command hooks to sync and you're good to go.
