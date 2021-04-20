@@ -58,14 +58,7 @@ def test_view_note(mocker: pytest_mock.MockerFixture):
     title = 'note_title'
 
     pynote.engine.view_note(title)
-    run.assert_called_once_with(
-        [
-            'bat', '--file-name', title, '-l', 'markdown',
-            f'{pynote.engine.NOTE_PATH / title}',
-        ],
-        check=True,
-        stderr=subprocess.DEVNULL,
-    )
+    run.assert_called_once()
 
 
 def test_view_note_failure(mocker: pytest_mock.MockerFixture):

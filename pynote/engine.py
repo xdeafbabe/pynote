@@ -57,16 +57,17 @@ def edit_note(title: str) -> None:
 def view_note(title: str) -> None:
     initialize()
 
+    args = [
+        arg.format(
+            PATH=NOTE_PATH / title,
+            TITLE=title,
+        )
+        for arg in config.view_args
+    ]
+
     try:
         subprocess.run(
-            [
-                'bat',
-                '--file-name',
-                title,
-                '-l',
-                'markdown',
-                f'{NOTE_PATH / title}',
-            ],
+            args,
             check=True,
             stderr=subprocess.DEVNULL,
         )

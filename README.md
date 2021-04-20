@@ -3,13 +3,12 @@
 [![codecov](https://codecov.io/gh/Euromance/pynote/branch/master/graph/badge.svg?token=aRfAPtBzsP)](https://codecov.io/gh/Euromance/pynote)
 
 Note taking app.
-Requires `bat` as it's my file viewer of choice.
-Might later make viewing configurable with custom commands and args and stuff.
-Utilizes `NeoVim` by default to edit notes, although might be configured.
+Uses `NeoVim` and `bat` to edit and show notes respectively by default.
+Markdown is also enforced with default settings.
 
 Didn't see any point in not using `NeoVim` or `bat` since they are awesome
 and have syntax highlighting and line numbers and less/cat behaviour and stuff.
-Much better than `print(file.read())` and `input()`, that's for sure!
+Better than `print(file.read())` and `input()`, that's for sure!
 
 ## Installation
 
@@ -35,14 +34,14 @@ Or `~/.notes` if you did not. Available commands:
 ```
 note edit sample-note
      # Create or edit a note with provided TITLE.
-     # Launches `NeoVim` and sets syntax to Markdown.
+     # Launches `NeoVim` or the one you set in the config file.
 
 note list
      # Lists available notes.
 
 note view sample-note
      # View a note with provided TITLE.
-     # Launches `bat` and sets syntax to Markdown.
+     # Launches `bat` or the one you set in the config file.
 
 note delete sample-note
      # Deletes a note with provided TITLE.
@@ -59,13 +58,13 @@ make testreport
 
 ## TODO
 
-- [ ] Config
+- [x] Config
   - [x] Note directory
-  - [ ] Editor args
-  - [ ] Viewer args
+  - [x] Editor args
+  - [x] Viewer args
   - [x] TOML config
 
-- [ ] Meta
+- [ ] Meta _(why tho)_
   - [ ] Categories
   - [ ] Creation date
   - [ ] SQLite or JSON????

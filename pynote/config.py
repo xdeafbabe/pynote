@@ -1,25 +1,18 @@
-import functools
 import pathlib
 import typing
 
 import confboy
 
 
-@functools.cache
-def get_note_path():
-    return pathlib.Path.home() / '.notes'
-
-
 config = confboy.Config(
     {
-        'note_path': 'callable:get_note_path',
-        'edit_args': ['nvim', '-c', '"set syntax=markdown"', '{PATH}'],
-    },
-    callables={
-        'get_note_path': {
-            'func': get_note_path,
-            'kwargs': {},
-        },
+        'note_path': f'{pathlib.Path.home() / ".notes"}',
+        'edit_args': [
+            'nvim', '-c', '"set syntax=markdown"', '{PATH}',
+        ],
+        'view_args': [
+            'bat', '--file-name', '{TITLE}', '-l', 'markdown', '{PATH}',
+        ],
     },
     toml_config_path=pathlib.Path.home() / '.pynote.cfg',
 )
