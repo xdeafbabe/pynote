@@ -1,7 +1,7 @@
 import setuptools
 
 
-VERSION = '0.1.4'
+VERSION = '0.1.5'
 
 
 setuptools.setup(
@@ -24,8 +24,8 @@ setuptools.setup(
     },
     python_requires='>=3.9,<4',
     install_requires=[
-        'confboy==0.2.0',
-        'typer[all]==0.3.2',
+        'confboy>=0.2.0,<1.0.0',
+        'typer[all]>=0.3.0,<1.0.0',
     ],
     extras_require={
         'dev': [
