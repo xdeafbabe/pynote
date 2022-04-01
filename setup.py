@@ -1,26 +1,26 @@
 import setuptools
 
 
-VERSION = '0.1.6'
+VERSION = '69.420'
 
 
 setuptools.setup(
     name='pynote',
     packages=setuptools.find_packages(),
     version=VERSION,
-    description='Note taking app.',
+    description='Note taking app. OUTDATED.',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url='https://github.com/Euromance/pynote',
-    author='Euromance',
-    author_email='kysput@gmail.com',
+    url='https://github.com/xdeafbabe/pynote',
+    author='0xDEAFBABE',
+    author_email='deafbabe@startmail.com',
     classifiers=[
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.9',
         'License :: OSI Approved :: MIT License',
     ],
     project_urls={
-        'Repository': 'https://github.com/Euromance/pynote',
+        'Repository': 'https://github.com/xdeafbabe/pynote',
     },
     python_requires='>=3.9,<4',
     install_requires=[
